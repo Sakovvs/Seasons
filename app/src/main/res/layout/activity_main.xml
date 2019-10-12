@@ -12,8 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/etYear"
@@ -37,6 +36,7 @@
 
         <EditText
             android:id="@+id/etHour"
+            android:paddingLeft="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -60,62 +60,89 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tvSpring"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:background="@drawable/spring"
-            android:gravity="center_vertical|right"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhyte"
+            android:paddingRight="8dp">
 
-            android:textSize="26sp" />
+            <TextView
+                android:id="@+id/tvSpring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhyte"
 
-        <TextView
-            android:id="@+id/tvSummer"
+                android:textSize="26sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-
             android:layout_weight="1"
             android:background="@drawable/summer"
-            android:gravity="center_vertical|right"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhyte"
-            android:textSize="26sp"
+            android:paddingRight="8dp">
 
-            />
+            <TextView
+                android:id="@+id/tvSummer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhyte"
+                android:textSize="26sp"
 
-        <TextView
-            android:id="@+id/tvAutumn"
+                />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-
             android:layout_weight="1"
             android:background="@drawable/autumn"
-            android:gravity="center_vertical|right"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhyte"
-            android:textSize="26sp"
+            android:paddingRight="8dp">
 
-            />
+            <TextView
+                android:id="@+id/tvAutumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhyte"
+                android:textSize="26sp"
 
-        <TextView
-            android:id="@+id/tvWinter"
+                />
+        </FrameLayout>
+
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="8dp"
-
             android:layout_weight="1"
             android:background="@drawable/winter"
-            android:gravity="center_vertical|right"
-            android:textAllCaps="false"
-            android:textColor="@color/colorWhyte"
-            android:textSize="26sp"
+            android:paddingRight="8dp">
 
-            />
+            <TextView
+                android:id="@+id/tvWinter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhyte"
+                android:textSize="26sp"
+
+                />
+        </FrameLayout>
+
     </LinearLayout>
 </LinearLayout>
